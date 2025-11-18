@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 8</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- WELCOME PAGE -->
+    <div id="welcome-page" class="welcome">
+        <h2 style="text-align: center;">Welcome to the Quiz!</h2>
+        <p style="margin-bottom: 50px;">Short quiz lang po</p>
+        <div class="creds-container">
+            <label>Your Name:</label>
+            <input type="text" id="userName" placeholder="Enter your name">
+
+            <label>Your Email:</label>
+            <input type="email" id="userEmail" placeholder="Enter your email">
+
+            <button onclick="startQuiz()">Next</button>
+        </div>
+    </div>
+
+    <!-- QUIZ Start -->
+    <div id="quiz-page" class="quiz-container" style="display:none;">
+
+        <h2 style="text-align: center;">Game Quiz</h2>
+        <p id="welcomeUser"></p>
+
+        <!-- Q1 -->
+        <div class="quiz-blockcontainer">
+            <div class="question-block">
+                <p>1. What is the output of: 2 + "2"  </p>
+                <input type="text" placeholder="Enter your answer" id="q1">
+                <p class="feedback" id="f1"></p>
+            </div>
+        </div>
+        
+        <!-- Q2 -->
+        <div class="quiz-blockcontainer">
+            <div class="question-block">
+                <p>2. Which HTML tag is used to create a hyperlink? (include &lt&gt")</p>
+                <input type="text" placeholder="Enter your answer" id="q2">
+                <p class="feedback" id="f2"></p>
+            </div>
+        </div>
+
+        <!-- Q3 -->
+        <div class="quiz-blockcontainer">
+            <div class="question-block">
+                <p>3. Which CSS property is used to change the text color?</p>
+                <input type="text" placeholder="Enter your answer" id="q3">
+                <p class="feedback" id="f3"></p>
+            </div>
+        </div>    
+
+        <!-- Q4 -->
+        <div class="quiz-blockcontainer">
+            <div class="question-block">
+                <p>4. Which CSS property controls the size of text?</p>
+                <input type="text" placeholder="Enter your answer" id="q4">
+                <p class="feedback" id="f4"></p>
+            </div>
+        </div>
+
+        <!-- Q5 -->
+        <div class="quiz-blockcontainer">
+            <div class="question-block">
+                <p>5. Which CSS property adds space inside an element's border?</p>
+                <input type="text" placeholder="Enter your answer" id="q5">
+                <p class="feedback" id="f5"></p>
+            </div>
+        </div>
+
+        <button onclick="checkAllAnswers()">Submit Answers</button>
+
+        <p id="final-score"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

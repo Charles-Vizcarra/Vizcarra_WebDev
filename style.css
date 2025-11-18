@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #cbd8f9;
+    padding: 40px;
+    text-align: center;
+}
+/*welcome page use this container */
+p {
+    margin: 45px;
+    text-align: justify;
+}
+.welcome {
+    background: rgba(255, 255, 255, 0.836);
+    width: 700px;
+    height: 500px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    text-align: left;
+}
+.creds-container {
+    background: rgba(255, 255, 255, 0.553);
+    width: 480px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    text-align: left;
+}
+/*quiz page use this container */
+.quiz-container {
+    background: rgba(255, 255, 255, 0.836);
+    width: 700px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    text-align: left;
+}
+
+/* Smaller container used for each quiz question */
+.quiz-blockcontainer {
+    background: rgb(255, 255, 255);
+    width: 500px;
+    margin: auto;
+    margin-bottom: 50px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    text-align: left;
+}
+
+.question-block {
+    margin-bottom: 20px;
+}
+
+/* Input fields (for welcome page & quiz) */
+input {
+    padding: 10px;
+    width: 95%;
+    border: 1px solid #555;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+/* Buttons */
+button {
+    padding: 12px 25px;
+    background: #4A6CFF;
+    color: white;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+    width: 100%;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #2c46bf;
+}
+
+.feedback {
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Score text */
+#final-score {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
